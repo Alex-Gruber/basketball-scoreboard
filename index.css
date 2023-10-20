@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.anzeige {
+    width: 10rem;
+    height: 10rem;
+    background-color: black;
+    color: red;
+    border-radius: 7px;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Digital Numbers', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    color: whitesmoke;
+    border: solid whitesmoke 1px;
+    border-radius: 7px;
+    padding: 8px;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 15px;
+}
+
+.anzeige-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;
+}
+
+h3 {
+    font-weight: bold;
+    color: whitesmoke
+}
+
+
+/* big screen styling */
+
+@media only screen and (min-width: 900px) {
+    .anzeige {
+        width: 22rem;
+        height: 22rem;
+        font-size: 12rem;
+    }
+    button {
+        font-size: 2rem;
+    }
+    .btn-container {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        width: 22rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
